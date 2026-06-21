@@ -16,37 +16,11 @@ Week 7 Interim Submission
 - FAISS
 
 
-# Intelligent Complaint Analysis for Financial Services
-
 This repository contains the interim submission for **B9W7: Intelligent Complaint Analysis for Financial Services**. The project builds the first two stages of a Retrieval-Augmented Generation (RAG) system for CrediTrust Financial: complaint data exploration/preprocessing and vector-store indexing.
 
 ## Business Context
 
 CrediTrust Financial receives large volumes of customer complaints across credit cards, personal loans, savings accounts, and money transfers. The goal is to convert raw complaint narratives into a searchable knowledge base that product, support, compliance, and leadership teams can query using natural language.
-
-## Interim Scope
-
-### Task 1: EDA and Preprocessing
-
-- Load the CFPB complaint dataset.
-- Analyze complaint distribution across products.
-- Analyze word-count distribution of consumer complaint narratives.
-- Count complaints with and without narratives.
-- Filter the dataset to the four target categories:
-  - Credit Card
-  - Personal Loan
-  - Savings Account
-  - Money Transfer
-- Remove empty narratives.
-- Clean and normalize narrative text.
-- Save the processed dataset to `data/processed/filtered_complaints.csv`.
-
-### Task 2: Chunking, Embedding, and Vector Store Indexing
-
-- Create a proportional stratified sample of 10,000–15,000 complaints.
-- Split long complaint narratives into overlapping chunks.
-- Generate embeddings using `sentence-transformers/all-MiniLM-L6-v2`.
-- Save a FAISS vector index and metadata in `vector_store/`.
 
 ## Repository Structure
 
