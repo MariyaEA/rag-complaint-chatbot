@@ -1,5 +1,23 @@
 # Intelligent Complaint Analysis for Financial Services
 
+Week 7 Interim Submission
+
+## Completed Tasks
+
+- Task 1: EDA and Data Preprocessing
+- Task 2: Chunking, Embedding, and Vector Store Indexing
+
+## Technologies
+
+- Python
+- Pandas
+- LangChain
+- Sentence Transformers
+- FAISS
+
+
+# Intelligent Complaint Analysis for Financial Services
+
 This repository contains the interim submission for **B9W7: Intelligent Complaint Analysis for Financial Services**. The project builds the first two stages of a Retrieval-Augmented Generation (RAG) system for CrediTrust Financial: complaint data exploration/preprocessing and vector-store indexing.
 
 ## Business Context
