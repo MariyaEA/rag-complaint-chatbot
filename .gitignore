@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Data and generated artifacts
+/data/raw/*
+/data/processed/*.csv
+/data/processed/*.parquet
+/vector_store/*
+!/data/raw/.gitkeep
+!/data/processed/.gitkeep
+!/vector_store/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/*.log

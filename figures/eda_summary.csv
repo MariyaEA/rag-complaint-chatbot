@@ -1,0 +1,6 @@
+metric,value
+total_records,9609797.0
+records_with_narratives,2980756.0
+records_without_narratives,6629041.0
+median_word_count_with_narrative,114.0
+mean_word_count_with_narrative,175.59760074289878
