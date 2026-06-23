@@ -142,3 +142,11 @@ The repository includes explicit Task 3 evaluation evidence in:
 ```text
 notebooks/02_rag_evaluation.md
 docs_rag_pipeline.md
+
+## Final Evaluation Evidence
+
+To run the Task 3 RAG evaluation examples:
+
+```bash
+python scripts/run_rag_evaluation.py
+python app.py
