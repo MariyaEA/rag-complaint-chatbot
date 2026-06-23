@@ -134,3 +134,11 @@ Run it with:
 
 ```bash
 python app.py
+
+## Task 3 Evaluation Evidence
+
+The repository includes explicit Task 3 evaluation evidence in:
+
+```text
+notebooks/02_rag_evaluation.md
+docs_rag_pipeline.md
