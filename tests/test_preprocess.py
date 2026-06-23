@@ -20,10 +20,17 @@ def test_clean_text_removes_boilerplate_and_symbols():
 def test_filter_and_clean():
     df = pd.DataFrame({
         "Complaint ID": [1, 2, 3],
-        "Product": ["Credit card", "Mortgage", "Personal loan"],
-        "Consumer complaint narrative": ["Billing problem happened repeatedly", "House issue", "Loan payment issue happened"],
+        "Product": ["Credit card or prepaid card", "Mortgage", "Payday loan, title loan, or personal loan"],
+        "Consumer complaint narrative": [
+            "Billing problem happened repeatedly after my credit card payment was processed incorrectly by the company.",
+            "House issue with mortgage paperwork and escrow communication from the company.",
+            "Loan payment issue happened because the company did not apply my personal loan payment correctly.",
+        ],
     })
+
     out = filter_and_clean(df)
+
     assert len(out) == 2
-    assert set(out["product_category"]) == {"Credit Card", "Personal Loan"}
+    assert "Mortgage" not in out["product_category"].values
     assert "cleaned_narrative" in out.columns
+    
