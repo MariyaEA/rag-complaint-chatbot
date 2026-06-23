@@ -111,3 +111,17 @@ python src/retriever_smoke_test.py "Why are customers unhappy with credit cards?
 ## Data Note
 
 Raw data and generated vector indexes can be large, so they are excluded from Git by default. The repository includes reproducible scripts to regenerate processed files and vector stores locally.
+
+## Interactive Chat Interface
+
+The final submission includes an interactive Gradio application in `app.py`.
+
+To run the app locally:
+
+```bash
+python app.py
+git add app.py requirements.txt README.md
+git commit -m "add inspectable gradio chat interface for task 4"
+git push origin main
+
+
