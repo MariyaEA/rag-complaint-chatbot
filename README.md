@@ -125,3 +125,12 @@ git commit -m "add inspectable gradio chat interface for task 4"
 git push origin main
 
 
+
+## Interactive Chat Interface
+
+The final submission includes an interactive Gradio app in `app.py`.
+
+Run it with:
+
+```bash
+python app.py
